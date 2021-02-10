@@ -1,8 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
-import MenuStyles from '../menu'
-import MenuItems from '../menu-items'
+import Menu from '../menu'
 
 const HeaderStyles = styled.header`
   margin-bottom: 2rem;
@@ -41,9 +40,7 @@ const Header = ({ siteTitle }) => (
         <Logo>
           <Link to="/">{siteTitle}</Link>
         </Logo>
-        <MenuStyles>
-          <MenuItems />
-        </MenuStyles>
+        <Menu />
       </HeaderInnerStyles>
     </div>
   </HeaderStyles>

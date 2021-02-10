@@ -1,3 +1,5 @@
+import React from 'react'
+import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 
 const MenuStyles = styled.nav`
@@ -60,4 +62,42 @@ const MenuStyles = styled.nav`
     `}
 `
 
-export default MenuStyles
+export default function Menu () {
+  return ( 
+    <>
+    <ul>
+      <li>
+        <Link
+          className="menu-link"
+          activeClassName="menu-link--active"
+          to="/"
+          partiallyActive
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="menu-link"
+          activeClassName="menu-link--active"
+          to="/workspaces"
+          partiallyActive
+        >
+          Workspaces
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="menu-link"
+          activeClassName="menu-link--active"
+          to="/contact"
+          partiallyActive
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
+    </>
+
+  )
+}

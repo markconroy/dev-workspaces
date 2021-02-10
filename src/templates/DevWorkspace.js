@@ -25,6 +25,7 @@ export default function SinglePage({ data }) {
           <ArticleStyles>
             <h1>{`${devWorkspace.yourName}'s Workspace`}</h1>
             <h2>What do you like about it?</h2>
+            <img src={devWorkspace.imageOfWorkspace} alt={`${title}'s Developer Workspace`} />
             <p>{devWorkspace.youLike}</p>
             <h2>What would you change about it?</h2>
             <p>{devWorkspace.youCouldChange}</p>
@@ -42,6 +43,7 @@ export const query = graphql`
       yourName: yourname
       youLike: whatdoyoulikeaboutthisworkspace
       youCouldChange: isthereanythingyouwouldchangeaboutit
+      imageOfWorkspace: linktoimageofworkspace
     }
   }
 `

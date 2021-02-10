@@ -4,8 +4,7 @@ import { Link } from 'gatsby'
 
 import SEO from '../components/seo'
 import GlobalStyles from '../styles/GlobalStyles'
-import MenuStyles from '../components/menu'
-import MenuItems from '../components/menu-items'
+import Menu from '../components/menu'
 
 const MainStyles = styled.main`
   display: flex;
@@ -29,9 +28,7 @@ const HomePage = () => (
         <div>
           <h1>Welcome to devWorkspaces</h1>
 
-          <MenuStyles treated>
-            <MenuItems />
-          </MenuStyles>
+          <Menu />
         </div>
       </MainStyles>
     </div>
