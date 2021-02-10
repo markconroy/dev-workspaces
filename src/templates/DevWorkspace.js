@@ -15,13 +15,18 @@ const ArticleStyles = styled.article`
 `
 
 export default function SinglePage({ data }) {
+  const devWorkspace = data.devWorkspace
   return (
     <>
       <Layout>
-        <SEO title={data.title} />
+        <SEO title={devWorkspace.yourname} />
         <div class="layout-contained layout-contained--large padding-horizontal">
           <ArticleStyles>
-            <h1>{data.title}</h1>
+            <h1>{`${devWorkspace.yourName}'s Workspace`}</h1>
+            <h2>What do you like about it?</h2>
+            <p>{devWorkspace.youLike}</p>
+            <h2>What would you change about it?</h2>
+            <p>{devWorkspace.youCouldChange}</p>
           </ArticleStyles>
         </div>
       </Layout>
@@ -29,11 +34,13 @@ export default function SinglePage({ data }) {
   )
 }
 
-// export const query = graphql`
-//   query($slug: String!) {
-//     nodePage(path: { alias: { eq: $slug } }) {
-//       id
-//       title
-//     }
-//   }
-// `
+export const query = graphql`
+  query($slug: String!) {
+    devWorkspace: googleSheetDevWorkspacesRow(id: { eq: $slug }) {
+      id
+      yourName: yourname
+      youLike: whatdoyoulikeaboutthisworkspace
+      youCouldChange: isthereanythingyouwouldchangeaboutit
+    }
+  }
+`
