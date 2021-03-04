@@ -6,7 +6,7 @@ dotenv.config({
 
 module.exports = {
   siteMetadata: {
-    title: `Starterkit`,
+    title: `Dev Workspaces`,
     description: `View developer workspaces: get inspirations for your own or show off what you have.`,
     author: `@markconroy`,
     siteUrl: `https://CHANGEME.com`,
@@ -20,9 +20,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+      options: {
+        name: `workspaces`,
+        path: `${__dirname}/src/workspaces`,
+      }
     },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

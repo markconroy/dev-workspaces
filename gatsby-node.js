@@ -12,10 +12,10 @@ async function turnDevWorkspacesIntoPages({ graphql, actions }) {
   const devWorkspacesTemplate = path.resolve(
     './src/templates/DevWorkspace.js'
   )
-  // 2. Query all blogs
+  // 2. Query all workspaces
   const { data } = await graphql(`
     query {
-      devWorkspaces: allGoogleSheetDevWorkspacesRow {
+      devWorkspaces: allMarkdownRemark {
         edges {
           node {
             id

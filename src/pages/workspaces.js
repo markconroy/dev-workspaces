@@ -8,25 +8,25 @@ import GlobalStyles from '../styles/GlobalStyles'
 import Layout from '../components/layout'
 
 export default function WorkSpacesListingPage ({data}) {
-  const workspaces = data.allGoogleSheetDevWorkspacesRow.edges
+  const workspaces = data.workspaces.edges
   return (
 
     <>
     <GlobalStyles />
       <Layout>
-    <SEO title="Developer Workspaces Images and Descriptions" />
+      <SEO title="Developer Workspaces Images and Descriptions" />
         <div className="layout-contained layout-contained--large padding-horizontal">
           <h1>Workspaces</h1>
+          <ul>
+
           {workspaces.map(workspace => {
             return (
               <>
-              <p>below</p>
-              <Link to={`/${workspace.node.id}`}>Workspace {workspace.node.id}</Link>
-              <p>above</p>
+                <li><Link to={`/${workspace.node.id}`}>Workspace {workspace.node.frontmatter.title}</Link></li>
               </>
             )
           })}
-          <p>I hope you like this</p>
+          </ul>
         </div>
       </Layout>
   </>
@@ -34,24 +34,16 @@ export default function WorkSpacesListingPage ({data}) {
 }
 
 
-// export const WorkSpacesQuery = graphql`
-//   query WorkSpacesListingQuery {
-//     workspaces: allGoogleSheetDevWorkspacesRow {
-//       edges {
-//         node {
-//           id
-//         }
-//       }
-//     }
-//   }
-// `
-
-export const query = graphql`
-  {
-    allGoogleSheetDevWorkspacesRow {
+export const WorkSpacesQuery = graphql`
+  query WorkSpacesListingQuery {
+    workspaces: allMarkdownRemark {
       edges {
         node {
           id
+          frontmatter {
+            title
+          }
+          html
         }
       }
     }
