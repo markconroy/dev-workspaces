@@ -38,11 +38,11 @@ export default function HomePage({ data }) {
     <>
       <GlobalStyles />
       <SEO
-        title={`Dev Workspaces | Today: ${
+        title={
           workspace.frontmatter.title
             ? workspace.frontmatter.title
             : 'Mark Conroy'
-        }`}
+        }
       />
       <div className="layout-contained layout-contained--small padding-horizontal">
         <MainStyles>
