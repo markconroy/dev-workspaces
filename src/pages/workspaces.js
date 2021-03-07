@@ -18,7 +18,10 @@ export default function WorkSpacesListingPage({ data }) {
     <>
       <GlobalStyles />
       <Layout>
-        <SEO title="Developer Workspaces Images and Descriptions" />
+        <SEO
+          title="Developer Workspaces Images and Descriptions"
+          metaImageSource={`${data.site.siteMetadata.siteUrl}${workspaces[0].node.frontmatter.image.publicURL}`}
+        />
         <div className="layout-contained layout-contained--large padding-horizontal">
           <h1>Workspaces</h1>
           <CardListContainer>
@@ -62,6 +65,7 @@ export const WorkSpacesQuery = graphql`
           frontmatter {
             title
             image {
+              publicURL
               childImageSharp {
                 gatsbyImageData(
                   aspectRatio: 1.5
@@ -72,6 +76,11 @@ export const WorkSpacesQuery = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }

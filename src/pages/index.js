@@ -43,6 +43,7 @@ export default function HomePage({ data }) {
             ? workspace.frontmatter.title
             : 'Mark Conroy'
         }
+        metaImageSource={`${data.site.siteMetadata.siteUrl}${workspace.frontmatter.image.publicURL}`}
       />
       <div className="layout-contained layout-contained--small padding-horizontal">
         <MainStyles>
@@ -81,12 +82,18 @@ export const HomePageQuery = graphql`
           frontmatter {
             title
             image {
+              publicURL
               childImageSharp {
                 gatsbyImageData(width: 600)
               }
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }
