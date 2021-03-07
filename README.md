@@ -1,16 +1,25 @@
 ---
-title: Gatsby Starterkit
+title: Dev Workspaces
 ---
 
-## Getting Started
+# Add Your Workspace
 
-- run `npm ci` to install the site site
-- make sure you have an environment file `.env.development` with a variable for `GATSBY_DRUPAL_SOURCE` that links to the instance of Drupal with your content (e.g. http://annertech.docksal)
-- - (You can also create an environment file for `.env.production` which will be used if you run any build commands.)
-- Make sure you set your ESLint to use the ESLint file from this project, so we all automatically follow the same coding standards. (If using VS Code, there's probably a little "ESLint" link in the bottom left of your window, which you can click to switch this on.)
-- - Our coding standards follow AirBnB in general, though we are using the Wes Bos package, so we follow AirBnB via Wes Bos overrides. If you follow the Wes Bos Master Gatsby course, this will all be nice an familiar to you.
-- There are a number of instances of `CHANGEME`. Make sure you update those (e.g. in `gatsby-config.js`).
+To add your workspace to this website, simply [https://github.com/markconroy/dev-workspaces](open a PR on GitHub) against the <code>main</code> branch. Some notes:
 
-## Creating "Stuff"
+- Create your workspace markdown file in <code>/src/workspaces</code>
+- Follow this naming convention for your folder <code>YYYY-MM-DD-your-name</code>
+- Follow this naming convention for your image <code>YYYY-MM-DD-your-name</code> (same as name of folder)
 
-All the "stuff" we create is in the `./src` directory.
+## Options
+
+Everything is saved in markdown frontmatter. Here are the options
+available:
+
+- <code>title</code> (your name, e.g. <code>Mark Conroy</code>)
+- <code>image</code> (name of image, e.g. <code>2021-03-05-mark-conroy.jpe</code>
+- <code>like</code> (what you like about your workspace)
+- <code>change</code> (what you might like to change about your workspace)
+- <code>blog</code> (address of your blog, e.g. <code>https://mark.ie/blog</code>)
+- <code>github</code> (your GitHub username, e.g. <code>markconroy</code>)
+- <code>twitter</code> (your Twitter username, e.g. <code>markconroy</code>)
+- <code>instagram</code>( your Instagram username, e.g. <code>markyconroy</code>)

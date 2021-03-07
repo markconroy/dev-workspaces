@@ -19,7 +19,10 @@ export default function AddPage() {
         <AddPageStyles className="layout-contained padding-horizontal">
           <h1>Add Your Workspace</h1>
           <p>
-            To add your workspace to this website, simply open a PR on GitHub
+            To add your workspace to this website, simply{' '}
+            <a href="https://github.com/markconroy/dev-workspaces">
+              open a PR on GitHub
+            </a>
             against the <code>main</code> branch. Some notes:
           </p>
           <ul>
