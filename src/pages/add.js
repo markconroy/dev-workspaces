@@ -38,6 +38,10 @@ export default function AddPage() {
               Follow this naming convention for your image{' '}
               <code>YYYY-MM-DD-your-name</code> (same as name of folder)
             </li>
+            <li>
+              Please keep the image to a fairly small size, to reduce the build{' '}
+              time of the site. Thanks.
+            </li>
           </ul>
           <p>
             Everything is saved in markdown frontmatter. Here are the options

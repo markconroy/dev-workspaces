@@ -9,6 +9,7 @@ To add your workspace to this website, simply [https://github.com/markconroy/dev
 - Create your workspace markdown file in <code>/src/workspaces</code>
 - Follow this naming convention for your folder <code>YYYY-MM-DD-your-name</code>
 - Follow this naming convention for your image <code>YYYY-MM-DD-your-name</code> (same as name of folder)
+- Please keep the image to a fairly small size, to reduce the build time of the site. Thanks.
 
 ## Options
 
