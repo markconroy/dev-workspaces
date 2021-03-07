@@ -31,7 +31,11 @@ export default function SinglePage({ data }) {
   return (
     <>
       <Layout>
-        <SEO title={`${title}'s Developer Workspace`} />
+        <SEO
+          title={`${title}'s Developer Workspace`}
+          metaImageSource={`${data.site.siteMetadata.siteUrl}${devWorkspace.frontmatter.image.publicURL}`}
+          description={`View ${title}'s Developer Workspace, and get inspiration for your own`}
+        />
         <div className="layout-contained layout-contained--large padding-horizontal">
           <ArticleStyles>
             <h1>{`${devWorkspace.frontmatter.title}'s Workspace`}</h1>
@@ -107,10 +111,16 @@ export const query = graphql`
         twitter
         instagram
         image {
+          publicURL
           childImageSharp {
             gatsbyImageData(width: 700)
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }
