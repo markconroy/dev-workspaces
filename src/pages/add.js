@@ -59,7 +59,7 @@ export default function AddPage() {
               workspace)
             </li>
             <li>
-              <code>blog</code> (address of your blog, e.g.
+              <code>blog</code> (address of your blog, e.g.{' '}
               <code>https://mark.ie/blog</code>)
             </li>
             <li>

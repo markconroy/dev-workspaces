@@ -17,8 +17,8 @@ available:
 
 - <code>title</code> (your name, e.g. <code>Mark Conroy</code>)
 - <code>image</code> (name of image, e.g. <code>2021-03-05-mark-conroy.jpe</code>
-- <code>like</code> (what you like about your workspace)
-- <code>change</code> (what you might like to change about your workspace)
+- <code>like</code> (what you like about your workspace - one paragraph, no line breaks)
+- <code>change</code> (what you might like to change about your workspace - one paragraph, no line breaks)
 - <code>blog</code> (address of your blog, e.g. <code>https://mark.ie/blog</code>)
 - <code>github</code> (your GitHub username, e.g. <code>markconroy</code>)
 - <code>twitter</code> (your Twitter username, e.g. <code>markconroy</code>)
