@@ -23,10 +23,11 @@ module.exports = {
       options: {
         name: `workspaces`,
         path: `${__dirname}/src/workspaces`,
-      }
+      },
     },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {

@@ -46,6 +46,12 @@ const GlobalStyles = createGlobalStyle`
     --border-radius: 5px;
     --box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
   }
+  
+  *,
+  *::before, 
+  *::after {
+    box-sizing: border-box;
+  }
 
   html {
     font-size: var(--base-font-size);
@@ -67,6 +73,10 @@ const GlobalStyles = createGlobalStyle`
 
   h3, .h3 {
     font-size: 1.75rem;
+  }
+
+  p {
+    margin-block-start: 0;
   }
 
   a {

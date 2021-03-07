@@ -4,21 +4,18 @@ import styled from 'styled-components'
 import Menu from '../menu'
 
 const HeaderStyles = styled.header`
-  margin-bottom: 2rem;
-  padding: 1rem 0;
-  background-color: var(--color-primary);
+  padding: 3rem 0;
 `
 
 const Logo = styled.p`
   margin: 0;
-  padding-top: .5rem;
   display: flex;
   flex-shrink: 0;
   @media screen and (min-width: 768px) {
     font-size: 2rem;
   }
   a {
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: bold;
     text-decoration: none;
     &:hover,
@@ -31,6 +28,7 @@ const Logo = styled.p`
 const HeaderInnerStyles = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 const Header = ({ siteTitle }) => (
