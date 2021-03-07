@@ -4,7 +4,7 @@ title: Dev Workspaces
 
 # Add Your Workspace
 
-To add your workspace to this website, simply [https://github.com/markconroy/dev-workspaces/](open a PR on GitHub) against the <code>main</code> branch. Some notes:
+To add your workspace to this website, simply, [open a PR on Github](https://github.com/markconroy/dev-workspaces) against the <code>main</code> branch. Some notes:
 
 - Create your workspace markdown file in <code>/src/workspaces</code>
 - Follow this naming convention for your folder <code>YYYY-MM-DD-your-name</code>
