@@ -12,7 +12,6 @@ const AddPageStyles = styled.article`
 
 export default function AddPage() {
   //
-
   return (
     <>
       <Layout>
@@ -43,7 +42,7 @@ export default function AddPage() {
           </p>
           <ul>
             <li>
-              <code>name</code> (your name, e.g. <code>Mark Conroy</code>)
+              <code>title</code> (your name, e.g. <code>Mark Conroy</code>)
             </li>
             <li>
               <code>image</code> (name of image, e.g.

@@ -50,7 +50,7 @@ export default function HomePage({ data }) {
                 : ''
             }
             cardTitle={
-              workspace.frontmatter.image ? workspace.frontmatter.title : ''
+              workspace.frontmatter.title ? workspace.frontmatter.title : ''
             }
             cardPath={`/workspaces/${workspace.id}`}
           />
