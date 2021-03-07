@@ -37,7 +37,13 @@ export default function HomePage({ data }) {
   return (
     <>
       <GlobalStyles />
-      <SEO title="Mark Conroy, Drupal and GatsbyJS" />
+      <SEO
+        title={`Dev Workspaces | Today: ${
+          workspace.frontmatter.title
+            ? workspace.frontmatter.title
+            : 'Mark Conroy'
+        }`}
+      />
       <div className="layout-contained layout-contained--small padding-horizontal">
         <MainStyles>
           <h1>Welcome to devWorkspaces</h1>

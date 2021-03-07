@@ -15,7 +15,7 @@ export default function AddPage() {
   return (
     <>
       <Layout>
-        <SEO title="Mark Conroy, Drupal and GatsbyJS" />
+        <SEO title="Add your Dev Workspace Image" />
         <AddPageStyles className="layout-contained padding-horizontal">
           <h1>Add Your Workspace</h1>
           <p>
