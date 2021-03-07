@@ -22,7 +22,7 @@ export default function AddPage() {
             To add your workspace to this website, simply{' '}
             <a href="https://github.com/markconroy/dev-workspaces">
               open a PR on GitHub
-            </a>
+            </a>{' '}
             against the <code>main</code> branch. Some notes:
           </p>
           <ul>
