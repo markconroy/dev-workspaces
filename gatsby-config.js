@@ -9,7 +9,7 @@ module.exports = {
     title: `Dev Workspaces`,
     description: `View developer workspaces: get inspirations for your own or show off what you have.`,
     author: `@markconroy`,
-    siteUrl: `https://CHANGEME.com`,
+    siteUrl: `https://dev-workspaces.mark.ie`,
     metaImage: `mark-conroy.jpg`,
   },
   plugins: [

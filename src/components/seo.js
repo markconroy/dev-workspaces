@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, title, metaImageSource }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = 'Annertech Digital Media Agency'
+  const defaultTitle = 'Dev Workspaces'
   const metaImage =
     `${site.siteMetadata.siteUrl}/${metaImageSource}` ||
     `${site.siteMetadata.siteUrl}/${site.siteMetadata.metaImage}`
